@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora(home)</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+        .nav-wrapper>ul>li>{
+            color:#333;
+        }
+        .btn,.btn-large,.btn-small,.btn-medium,.btn-flat{
+            text-transform: capitalize;
+        }
+        .btn-primary{
+            border:1px solid #009649 !important;
+            opacity:0.5;
+            color: #009649;
+            border-radius:5px !important;
+            padding:0px 30px;
+        }
+        .btn-large-primary{
+            min-width:250px;
+            border-radius:5px;
+            padding-top:px;
+            padding-bottom:10px;
+        }
+        .container{
+            width:83%;
+        }
+        .full-w{
+            width:100% !important;
+        }
+        .b{
+            border:2px dashed red;
+        }
+        .card-panel,.card,.card>.card-image{
+            border-radius:10px;
+        }
+        .primary-color{color:#002044;}
+        .secondary-color{color:#009649;}
+        .pl-50{padding-left:50px;}
+        .pl-100{padding-left:100px;}
+        .pl-120{padding-left:120px;}
+        .pb-25{padding-bottom:25px;}
+        .pb-50{padding-bottom:50px;}
+        .pb-100{padding-bottom:100px;}
+        .pb-120{padding-bottom:120px;}
+        
+        /* config style ends here */
+        .banner{
+            height:auto !important;
+            background:#002044;
+            padding:50px 0px ;
+        }
+        .banner-row-one{
+            min-height:550px;
+        }
+        .banner-row-two{
+            width:100%;
+            min-height:300px;
+        }
+        .home-page-banner-image{
+            width:100%;
+            height:450px;
+            border-radius:16px 0px 0px 16px;
+            background:url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+        <header>
+            <nav class="white">
+            <div class="container  nav-wrapper">
+                <a href="#!" class="brand-logo black-text">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="left">
+                        <div class="">
+                            <a href="#" class="black-text">
+                                <b style="border-bottom:2px solid green;">Home</b>
+                            </a>
+                            <!-- <div class="green" style="width:30px;border:2px solid green;border-radius:20px;margin-top:-20px;"></div> -->
+                        </div>
+                        
+                    </li>
+                    <li><a href="#" class="grey-text text-darken-3">Explore</a></li>
+                    <li><a href="#" class="grey-text text-darken-3">Community</a></li>
+                    <li><a href="#" class="grey-text text-darken-3">About Us</a></li>
+                    <li><a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">Login</a></li>
+                      <!-- Modal Trigger -->
+                </ul>
+            </div>
+            </nav>
+            
+            <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+                      
+        </header>
+    <!-- header section-->
+
+    <!-- banner section -->
+        <section>
+            <div class="banner ">
+                <div class="banner-row-one full-w row p-50">
+                    <div class="col s12  m6">
+                        <div class="pl-100">
+                            <h1 class="white-text ">
+                                Grow your investment
+                                with Aurora
+                            </h1>
+                            <article class="grey-text">
+                                The whole idea of Aurora is to tecah people how to Grow
+                                their investment savings and other sources of income.
+                                You want to know how?
+                            </article><br>
+                            <a href="#" class="btn-large btn-large-primary white-text green">
+                                Join aurora 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s12 m6" style="padding-right:0px !important;">
+                       <div class="home-page-banner-image red"></div>
+                    </div>
+                </div>
+
+                <div class="banner-row-two full-w ">
+                    
+                    <div class="pb-25 center section-heading" style=" width:400px;min-height:60px;margin:0px auto !important;">
+                        <h4 class="white-text">Why learn with Aurora</h4>
+                        <div class="row container" style="margin-top:-30px;">
+                            <div class="col s9"></div>
+                            <div class="col pink s3" style="height:20px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="container row">
+
+                        <div class="col s12 m4">
+                            <div class="card-panel white center">
+                                <div class="center pb-25">
+                                    
+                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
+                                        <i class="material-icons"> equalizer</i>
+                                    </a>
+                                    <h6><b> Enthusiaticlly Generated</b></h6>
+                                </div>
+                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card-panel white center">
+                                <div class="center pb-25">
+                                    
+                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
+                                        <i class="material-icons"> equalizer</i>
+                                    </a>
+                                    <h6><b> Enthusiaticlly Generated</b></h6>
+                                </div>
+                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card-panel white center">
+                                <div class="center pb-25">
+                                    
+                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
+                                        <i class="material-icons"> equalizer</i>
+                                    </a>
+                                    <h6><b> Enthusiaticlly Generated</b></h6>
+                                </div>
+                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- banner sectiion -->
+
+
+    <!-- main -->
+        <main>
+            <section>
+                <div class="popular-courses full-w ">
+                    <div class="pb-25 center section-heading" style=" width:400px;min-height:60px;margin:0px auto !important;">
+                        <h4 class="primary-color">Popular courses</h4>
+                        <div class="row container" style="margin-top:-30px;">
+                            <div class="col s7"></div>
+                            <div class="col pink s3" style="height:15px;"></div>
+                            <div class="col s1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row container ">
+                    <div class="pb-50" style="width:400px;margin:0px auto !important;">
+                        <ul class="tabs ">
+                            <li class="tab col s6"><a class="active" href="#test-swipe-1">Public Finance</a></li>
+                            <li class="tab col s6"><a  href="#test-swipe-2">Business Finance</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="test-swipe-1" class="col center  s12">
+                        <div class="row">
+                                
+                            <div class="col s12 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                      <img src="https://materializecss.com/images/sample-1.jpg">
+                                      <span class="card-title">Card Title</span>
+                                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="col s12 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                      <img src="https://materializecss.com/images/sample-1.jpg">
+                                      <span class="card-title">Card Title</span>
+                                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="col s12 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                      <img src="https://materializecss.com/images/sample-1.jpg">
+                                      <span class="card-title">Card Title</span>
+                                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="test-swipe-2" class="col s12 center ">
+                        <div class="row">
+
+                            <div class="col s12 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                      <img src="https://materializecss.com/images/sample-1.jpg">
+                                      <span class="card-title">Benefit boys</span>
+                                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s12 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                      <img src="https://materializecss.com/images/sample-1.jpg">
+                                      <span class="card-title">Benefit boys</span>
+                                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s12 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                      <img src="https://materializecss.com/images/sample-1.jpg">
+                                      <span class="card-title">Benefit boys</span>
+                                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                     
+                </div>
+                    
+                
+                </div>
+
+            </section>
+            <!-- popolar courser ends -->
+
+            <!-- how it works -->
+            <section>
+                <div class="how-it-works pb-100 full-w" style="margin-top:100px;">
+                    <div class="pb-25 center section-heading" style=" width:400px;min-height:60px;margin:0px auto !important;">
+                        <h4 class="primary-color">How it works</h4>
+                        <div class="row container" style="margin-top:-30px;">
+                            <div class="col s7"></div>
+                            <div class="col pink s3" style="height:15px;"></div>
+                            <div class="col s1"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="container">
+                            <hr style="margin-bottom:-35px;">
+                        </div>
+                    </div>
+                    
+                    <div class="container row">
+
+                        <div class="col s12 m4">
+                            <div class=" transparent center">
+                                <div class="center pb-25">
+                                    
+                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
+                                        1
+                                    </a>
+                                    <h6><b> Enthusiaticlly Generated</b></h6>
+                                </div>
+                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="transparent center">
+                                <div class="center pb-25">
+                                    
+                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
+                                        2
+                                    </a>
+                                    <h6><b> Enthusiaticlly Generated</b></h6>
+                                </div>
+                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="transparent center">
+                                <div class="center pb-25">
+                                    
+                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
+                                        3
+                                    </a>
+                                    <h6><b> Enthusiaticlly Generated</b></h6>
+                                </div>
+                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- how it works -->
+
+        </main>
+    <!-- main -->
+
+
+<!-- modal section -->
+<!-- Modal Structure -->
+
+    
+<!-- modal section -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.modal').modal();
+
+    $('.tabs').tabs();
+});
+</script>
+</body>
+</html>
