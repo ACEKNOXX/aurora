@@ -23,7 +23,7 @@
             text-transform: capitalize;
         }
         .btn-primary{
-            border:1px solid #009649 !important;
+            border:2px solid #009649 !important;
             opacity:0.8;
             color: #009649;
             border-radius:5px !important;
@@ -80,8 +80,11 @@
         .mt-50{margin-top:50px;}
         .mt-100{margin-top:100px;}
         .mt-120{margin-top:120px;}
-        
-        /* config style ends here */
+
+        .footer-nav>a>h6{
+            margin:16px 0px !important;
+        }
+        /* config style ends h ere */
         .banner{
             height:auto !important;
             background:#002044;
@@ -121,6 +124,9 @@
             background-repeat: no-repeat;
             background-position:left;
             background-size:cover;
+        }
+        .subscibe-input>::placeholder{
+            color:#eee !important;
         }
     </style>
 </head>
@@ -717,16 +723,48 @@
 
     <!-- footer -->
         <footer>
-            <div class="footer bg-primary" style="height:400px;">
-                <div class="containaer row">
-                    <div class="col s12  m3">
-                       
+            <div class="footer bg-primary" style="min-height:300px;">
+                <div class="container row">
+                    <div class="col mt-50 s12  m3">
+                       <img class="mt-25" src="assets/logos/logo white version.svg" alt="">
+                       <div class="col  s12">
+                        <small>
+                            <p>&#169; 2020 Aurora.All rights reserved   </p>
+                        </small>
+                       </div>
                     </div>
-                    <div class="col s12  m6">
-
+                    <div class="col mt-50  s12  m6">
+                        <div class="col s4">
+                            <h6 style="font-size:22px;"> Quick links </h6>
+                            <div class="mt-25 footer-nav">
+                                <a href="#" class="white-text"><h6>Home</h6> </a>
+                                <a href="#" class="white-text"><h6>Explore</h6> </a>
+                                <a href="#" class="white-text"><h6>Community</h6> </a>
+                                <a href="#" class="white-text"><h6>About Us</h6> </a>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <h6 style="font-size:22px;"> Courses </h6>
+                            <div class="mt-25 footer-nav">
+                                <a href="#" class="white-text"><h6>Public finance</h6> </a>
+                                <a href="#" class="white-text"><h6>Business finance</h6> </a>
+                               
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <h6 style="font-size:22px;"> Company </h6>
+                            <div class="mt-25 footer-nav">
+                                <a href="#" class="white-text"><h6>Help & support</h6> </a>
+                                <a href="#" class="white-text"><h6>Terms of use</h6> </a>
+                                <a href="#" class="white-text"><h6>Contact Us</h6> </a>
+                                <a href="#" class="white-text"><h6>Privacy</h6> </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col s12  m3">
-
+                    <div class="col  s12 mt-50  m3">
+                        <h6 style="font-size:22px;"> Subscribe to mailing list </h6>
+                        <input class="subscibe-input mt-50" placeholder="Email address" type="text" style="font-size:15px !important; border:1px solid #eee;width:250px;padding:2px 8px;border-radius:5px;color:#eee !important;">
+                        <button class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger" style="border-radius: 8px;">Subcribe now !</button>
                     </div>
                 </div>
             </div>
