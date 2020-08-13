@@ -8,8 +8,579 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap');
+        @font-face {
+            font-family: gordita;
+            src: url('assets/fonts/Gordita\ Black.otf');
+        }
+       
+        .nav-wrapper>ul>li>{
+            color:#333;
+        }
+        .btn,.btn-large,.btn-small,.btn-medium,.btn-flat{
+            text-transform: capitalize;
+        }
+        .btn-primary{
+            border:2px solid #009649 !important;
+            opacity:0.8;
+            color: #009649;
+            border-radius:6px !important;
+            padding:0px 30px;
+        }
+        .btn-primary:hover,.outline{
+            background:#009649 !important;
+            color:#fff;
+        }
+        .btn-large-primary{
+            min-width:250px;
+            border-radius:5px;
+            padding-top:px;
+            padding-bottom:10px;
+        }
+        .outline{
+            border:1px solid #009649 !important;
+            background:#fff !important;
+            color: #009649;
+        }
+        .container{
+            width:83%;
+        }
+        .full-w{
+            width:100% !important;
+        }
+        .b{
+            border:2px dashed red;
+        }
+        .card-panel,.card,.card>.card-image{
+            border-radius:20px;
+        }
+        .icons-small{
+            font-size:15px !important;
+        }
+        .gordita{
+            font-family: 'Gorditas', cursive !important;
+        }
+        .primary-color{color:#002044;}
+        .bg-primary{background:#002044;color:#ffffff;}
+        .secondary-color{color:#009649;}
+        .pl-50{padding-left:50px;}
+        .pl-100{padding-left:100px;}
+        .pl-120{padding-left:120px;}
+        .pb-25{padding-bottom:25px;}
+        .pb-50{padding-bottom:50px;}
+        .pb-100{padding-bottom:100px;}
+        .pb-120{padding-bottom:120px;}
+        .pt-25{padding-top:25px;}
+        .pt-50{padding-top:50px;}
+        .pt-100{padding-top:100px;}
+        .pt-120{padding-top:120px;}
+        .mt-25{margin-top:25px;}
+        .mt-50{margin-top:50px;}
+        .mt-100{margin-top:100px;}
+        .mt-120{margin-top:120px;}
+
+        .footer-nav>a>h6{
+            margin:16px 0px !important;
+        }
+    </style>
     </head>
     <body>
-        
-    </body>
-    </html>
+          <!-- header section -->
+          <header>
+            <nav class="white">
+            <div class="container  nav-wrapper">
+                <a href="#!" class="brand-logo black-text">
+                    <img src="assets/logos/Logo blue version.svg" style="margin-top:10px;" alt="">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right  hide-on-med-and-down " style="width:70%; height:53px;">
+                    <li class="">
+                        <div class="">
+                            <a href="index.html" class="black-text" >
+                                Home
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#" class="black-text" >
+                                <b>Explore</b>
+                            </a>
+                            <hr class="green" style="margin-top:-20px;width:25px;border:10px;border-radius:3px;height:5px;margin-left:15px;">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="grey-text text-darken-3">Community</a>
+                    </li>
+                    <li>
+                        <a href="#" class="grey-text text-darken-3">About Us</a>
+                    </li>
+                    <li class="right">
+                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">Login</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+            
+            <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+                      
+        </header>
+    <!-- header section-->
+
+    <!-- banner serction -->
+        <section>
+            <div class="explore-banner">
+
+            </div>
+        </section>
+    <!-- banner section -->
+
+    <!-- trending courser -->
+        <section>
+            <div class="  trending-feature pb-100 full-w" style="margin-top:100px;">
+                <div class="container row">
+                    <div class="col s12 m10">
+                        <div class=" pb-25 left section-heading" style=" width:500px;min-height:60px;margin:0px auto !important;">
+                            <h4 class="primary-color" style="font-weight:600;">Trending public finance courses</h4>
+                            <div class="row " style="margin-top:-30px;">
+                                <div class="col s7"></div>
+                                <div class="col s4 pink" style="height:15px;"></div>
+                                <div class="col s1"></div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col m2 s12 pt-25 ">
+                        <h6 class="mt-25 right">
+                            <a href="#" class=" green-text" style="text-decoration: underline;">View all</a>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="container row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h5>Finance Marketing</h5 >
+                                    <p>Chukwuemeka Doe</p>
+                                    <div class="" style="width:210px; display:flex;justify-content:space-between;">
+                                        <div class="col s4 ">
+                                            <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                            <small>
+                                                <b> 
+                                                    2.5k
+                                                </b>
+                                            </small>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 
+                                                    4.5k
+                                                </b>
+                                            </small>
+                                            
+                                            <i class="material-icons yellow-text icons-small">star</i>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 01h 25m </b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col s7">
+                                       
+                                        <small >
+                                            <p >Efficiently provide acces to future-proof quality
+                                            vector with B2C platform. Intrinsicly negotiate</p>
+                                        </small>
+                                    </div>
+                                    <div class="col s5">
+                                        
+                                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">
+                                            Enroll now !
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h5>Finance Marketing</h5 >
+                                    <p>Chukwuemeka Doe</p>
+                                    <div class="" style="width:210px; display:flex;justify-content:space-between;">
+                                        <div class="col s4 ">
+                                            <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                            <small>
+                                                <b> 
+                                                    2.5k
+                                                </b>
+                                            </small>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 
+                                                    4.5k
+                                                </b>
+                                            </small>
+                                            
+                                            <i class="material-icons yellow-text icons-small">star</i>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 01h 25m </b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col s7">
+                                       
+                                        <small >
+                                            <p >Efficiently provide acces to future-proof quality
+                                            vector with B2C platform. Intrinsicly negotiate</p>
+                                        </small>
+                                    </div>
+                                    <div class="col s5">
+                                        
+                                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">
+                                            Enroll now !
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h5>Finance Marketing</h5 >
+                                    <p>Chukwuemeka Doe</p>
+                                    <div class="" style="width:210px; display:flex;justify-content:space-between;">
+                                        <div class="col s4 ">
+                                            <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                            <small>
+                                                <b> 
+                                                    2.5k
+                                                </b>
+                                            </small>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 
+                                                    4.5k
+                                                </b>
+                                            </small>
+                                            
+                                            <i class="material-icons yellow-text icons-small">star</i>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 01h 25m </b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col s7">
+                                       
+                                        <small >
+                                            <p >Efficiently provide acces to future-proof quality
+                                            vector with B2C platform. Intrinsicly negotiate</p>
+                                        </small>
+                                    </div>
+                                    <div class="col s5">
+                                        
+                                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">
+                                            Enroll now !
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </section>
+    <!-- trending course -->
+
+
+        <!-- trending courser -->
+        <section>
+            <div class="  trending-feature pb-100 full-w" style="">
+                <div class="container row">
+                    <div class="col s12 m10">
+                        <div class=" pb-25 left section-heading" style=" width:500px;min-height:60px;margin:0px auto !important;">
+                            <h4 class="primary-color" style="font-weight:600;">Trending public finance courses</h4>
+                            <div class="row " style="margin-top:-30px;">
+                                <div class="col s7"></div>
+                                <div class="col s4 pink" style="height:15px;"></div>
+                                <div class="col s1"></div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col m2 s12 pt-25 ">
+                        <h6 class="mt-25 right">
+                            <a href="#" class=" green-text" style="text-decoration: underline;">View all</a>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="container row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h5>Finance Marketing</h5 >
+                                    <p>Chukwuemeka Doe</p>
+                                    <div class="" style="width:210px; display:flex;justify-content:space-between;">
+                                        <div class="col s4 ">
+                                            <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                            <small>
+                                                <b> 
+                                                    2.5k
+                                                </b>
+                                            </small>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 
+                                                    4.5k
+                                                </b>
+                                            </small>
+                                            
+                                            <i class="material-icons yellow-text icons-small">star</i>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 01h 25m </b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col s7">
+                                       
+                                        <small >
+                                            <p >Efficiently provide acces to future-proof quality
+                                            vector with B2C platform. Intrinsicly negotiate</p>
+                                        </small>
+                                    </div>
+                                    <div class="col s5">
+                                        
+                                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">
+                                            Enroll now !
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h5>Finance Marketing</h5 >
+                                    <p>Chukwuemeka Doe</p>
+                                    <div class="" style="width:210px; display:flex;justify-content:space-between;">
+                                        <div class="col s4 ">
+                                            <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                            <small>
+                                                <b> 
+                                                    2.5k
+                                                </b>
+                                            </small>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 
+                                                    4.5k
+                                                </b>
+                                            </small>
+                                            
+                                            <i class="material-icons yellow-text icons-small">star</i>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 01h 25m </b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col s7">
+                                       
+                                        <small >
+                                            <p >Efficiently provide acces to future-proof quality
+                                            vector with B2C platform. Intrinsicly negotiate</p>
+                                        </small>
+                                    </div>
+                                    <div class="col s5">
+                                        
+                                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">
+                                            Enroll now !
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h5>Finance Marketing</h5 >
+                                    <p>Chukwuemeka Doe</p>
+                                    <div class="" style="width:210px; display:flex;justify-content:space-between;">
+                                        <div class="col s4 ">
+                                            <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                            <small>
+                                                <b> 
+                                                    2.5k
+                                                </b>
+                                            </small>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 
+                                                    4.5k
+                                                </b>
+                                            </small>
+                                            
+                                            <i class="material-icons yellow-text icons-small">star</i>
+                                        </div>
+                                        <div class="col s4">
+                                            <small>
+                                                <b> 01h 25m </b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col s7">
+                                       
+                                        <small >
+                                            <p >Efficiently provide acces to future-proof quality
+                                            vector with B2C platform. Intrinsicly negotiate</p>
+                                        </small>
+                                    </div>
+                                    <div class="col s5">
+                                        
+                                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">
+                                            Enroll now !
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+            </div>
+        </section>
+    <!-- trending course -->
+
+     <!-- footer -->
+     <footer>
+        <div class="footer bg-primary" style="min-height:300px;">
+            <div class="container row">
+                <div class="col mt-50 s12  m3">
+                   <img class="mt-25" src="assets/logos/logo white version.svg" alt="">
+                   <div class="col  s12">
+                    <small>
+                        <p>&#169; 2020 Aurora.All rights reserved   </p>
+                    </small>
+                   </div>
+                </div>
+                <div class="col mt-50  s12  m6">
+                    <div class="col s4">
+                        <h6 style="font-size:22px;"> Quick links </h6>
+                        <div class="mt-25 footer-nav">
+                            <a href="#" class="white-text"><h6>Home</h6> </a>
+                            <a href="#" class="white-text"><h6>Explore</h6> </a>
+                            <a href="#" class="white-text"><h6>Community</h6> </a>
+                            <a href="#" class="white-text"><h6>About Us</h6> </a>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <h6 style="font-size:22px;"> Courses </h6>
+                        <div class="mt-25 footer-nav">
+                            <a href="#" class="white-text"><h6>Public finance</h6> </a>
+                            <a href="#" class="white-text"><h6>Business finance</h6> </a>
+                           
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <h6 style="font-size:22px;"> Company </h6>
+                        <div class="mt-25 footer-nav">
+                            <a href="#" class="white-text"><h6>Help & support</h6> </a>
+                            <a href="#" class="white-text"><h6>Terms of use</h6> </a>
+                            <a href="#" class="white-text"><h6>Contact Us</h6> </a>
+                            <a href="#" class="white-text"><h6>Privacy</h6> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col  s12 mt-50  m3">
+                    <h6 style="font-size:22px;"> Subscribe to mailing list </h6>
+                    <input class="subscibe-input mt-50" placeholder="Email address" type="text" style="font-size:15px !important; border:1px solid #eee;width:250px;padding:2px 8px;border-radius:5px;color:#eee !important;">
+                    <button class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger" style="height:45px; border-radius: 8px;">Subcribe now !</button>
+                    <!-- <div class="b" style="width:200px;"> -->
+                        <!-- <img src="assets/Aurora_icons/facebook logo.svg" alt=""> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- modal section -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.modal').modal();
+
+    $('.tabs').tabs();
+});
+</script>
+</body>
+</html>
