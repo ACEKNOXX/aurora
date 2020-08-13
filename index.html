@@ -8,8 +8,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="assets/fonts/Chronicle Display Black.otf">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap');
+        @font-face {
+            font-family: gordita;
+            src: url('assets/fonts/Gordita\ Black.otf');
+        }
+       
         .nav-wrapper>ul>li>{
             color:#333;
         }
@@ -48,7 +54,7 @@
             border:2px dashed red;
         }
         .card-panel,.card,.card>.card-image{
-            border-radius:10px;
+            border-radius:20px;
         }
         .icons-small{
             font-size:15px !important;
@@ -100,7 +106,7 @@
         }
         .dashboard-snippet-image{
             width:100%;
-            height:600px;
+            height: 725px;
             /* border-radius:16px 0px 0px 16px; */
             background:url("assets/Aurora_images/Courses\ dashboard\ Aurora\ 1-min.png");
             background-repeat: no-repeat;
@@ -123,7 +129,9 @@
         <header>
             <nav class="white">
             <div class="container  nav-wrapper">
-                <a href="#!" class="brand-logo black-text">Logo</a>
+                <a href="#!" class="brand-logo black-text">
+                    <img src="assets/logos/Logo blue version.svg" alt="">
+                </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="left">
@@ -159,16 +167,21 @@
             <div class="banner ">
                 <div class="banner-row-one full-w row p-50">
                     <div class="col s12  m6">
-                        <div class="pl-100">
-                            <h1 class="white-text ">
-                                Grow your investment
-                                with Aurora
-                            </h1>
-                            <article class="grey-text">
-                                The whole idea of Aurora is to tecah people how to Grow
-                                their investment savings and other sources of income.
-                                You want to know how?
-                            </article><br>
+                        <div class="pl-100 pt-100">
+                            <div class="" style="width:460px;">
+                                <h3 class="white-text ">
+                                    Grow your investment
+                                    with <span style="font-family:gordita;">
+                                     <i> Aurora</i>
+                                    </span> 
+                                </h1>
+                                <article class="grey-text">
+                                    The whole idea of Aurora is to tecah people how to Grow
+                                    their investment savings and other sources of income.
+                                    You want to know how?
+                                </article><br>
+                            </div>
+                            
                             <a href="#" class="btn-large btn-large-primary white-text green">
                                 Join aurora 
                             </a>
@@ -194,10 +207,24 @@
                         <div class="col s12 m4">
                             <div class="card-panel white center">
                                 <div class="center pb-25">
-                                    
-                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
-                                        <i class="material-icons"> equalizer</i>
-                                    </a>
+                                    <div style="width:80px;height:80px;margin:0px auto;">
+                                        <img src="assets/Aurora_icons/Why learn card icon.svg" height="inherit" width="inherit" alt="">
+                                    </div>
+                                   
+                                    <h6><b> Enthusiaticlly Generated</b></h6>
+                                </div>
+                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card-panel white center">
+                                <div class="center pb-25">
+                                    <div style="width:80px;height:80px;margin:0px auto;">
+                                        <img src="assets/Aurora_icons/Why learn card icon.svg" height="inherit" width="inherit" alt="">
+                                    </div>
                                     <h6><b> Enthusiaticlly Generated</b></h6>
                                 </div>
                                 <span class="black-text">I am a very simple card. I am good at containing small bits of information.
@@ -210,24 +237,9 @@
                             <div class="card-panel white center">
                                 <div class="center pb-25">
                                     
-                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
-                                        <i class="material-icons"> equalizer</i>
-                                    </a>
-                                    <h6><b> Enthusiaticlly Generated</b></h6>
-                                </div>
-                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m4">
-                            <div class="card-panel white center">
-                                <div class="center pb-25">
-                                    
-                                    <a class="btn-floating btn-large waves-effect waves-light" style="background:#002044;">
-                                        <i class="material-icons"> equalizer</i>
-                                    </a>
+                                    <div style="width:80px;height:80px;margin:0px auto;">
+                                        <img src="assets/Aurora_icons/Why learn card icon.svg" height="inherit" width="inherit" alt="">
+                                    </div>
                                     <h6><b> Enthusiaticlly Generated</b></h6>
                                 </div>
                                 <span class="black-text">I am a very simple card. I am good at containing small bits of information.
@@ -272,28 +284,34 @@
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image">
-                                      <img src="assets/Aurora_images/Courses card image-min.png">
+                                      <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;">
                                     </div>
                                     <div class="card-content">
                                         <div class="card-heading">
                                             <h5>Finance Marketing</h5 >
                                             <p>Chukwuemeka Doe</p>
-                                            <div class="row">
+                                            <div class="" style="width:210px; display:flex;justify-content:space-between;">
                                                 <div class="col s4 ">
-                                                    <i class="material-icons icons-small" >person</i>
-                                                    <!-- <small>  -->
-                                                        2.5k
-                                                    <!-- </small> -->
-                                                    <!-- <span class="b" style="margin-top:-10px;" >2.5k</span> -->
+                                                    <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                                    <small>
+                                                        <b> 
+                                                            2.5k
+                                                        </b>
+                                                    </small>
                                                 </div>
                                                 <div class="col s4">
+                                                    <small>
+                                                        <b> 
+                                                            4.5k
+                                                        </b>
+                                                    </small>
+                                                    
                                                     <i class="material-icons yellow-text icons-small">star</i>
-                                                    <span>2.5k</span>
                                                 </div>
                                                 <div class="col s4">
-                                                    <!-- <span>01h 25m</span> -->
-                                                    <i class="material-icons icons-small">slow_motion_video</i>
-                                                    01h 25m
+                                                    <small>
+                                                        <b> 01h 25m </b>
+                                                    </small>
                                                 </div>
                                             </div>
                                         </div>
@@ -319,28 +337,35 @@
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image">
-                                      <img src="assets/Aurora_images/Courses card image-min.png">
+                                      <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;" >
                                     </div>
                                     <div class="card-content">
                                         <div class="card-heading">
                                             <h5>Finance Marketing</h5 >
                                             <p>Chukwuemeka Doe</p>
-                                            <div class="row">
-                                                <div class="col s4 ">
-                                                    <i class="material-icons icons-small" >person</i>
-                                                    <!-- <small>  -->
+                                            <div class="" style="width:210px; display:flex;justify-content:start;">
+                                                <div class="col s4  ">
+                                                    <img  src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                                   <small>
+                                                    <b> 
                                                         2.5k
-                                                    <!-- </small> -->
-                                                    <!-- <span class="b" style="margin-top:-10px;" >2.5k</span> -->
+                                                    </b>
+                                                   </small>
+                                                   
                                                 </div>
                                                 <div class="col s4">
+                                                    <small>
+                                                        <b> 
+                                                            4.5k
+                                                        </b>
+                                                    </small>
+                                                    
                                                     <i class="material-icons yellow-text icons-small">star</i>
-                                                    <span>2.5k</span>
                                                 </div>
                                                 <div class="col s4">
-                                                    <!-- <span>01h 25m</span> -->
-                                                    <i class="material-icons icons-small">slow_motion_video</i>
-                                                    01h 25m
+                                                    <small>
+                                                        <b> 01h 25m </b>
+                                                    </small>
                                                 </div>
                                             </div>
                                         </div>
@@ -366,28 +391,36 @@
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image">
-                                      <img src="assets/Aurora_images/Courses card image-min.png">
+                                      <img src="assets/Aurora_images/Courses card image-min.png" style="border-radius:20px 20px 0px 0px;">
                                     </div>
                                     <div class="card-content">
                                         <div class="card-heading">
                                             <h5>Finance Marketing</h5 >
                                             <p>Chukwuemeka Doe</p>
-                                            <div class="row">
+                                            <div class="" style="width:210px; display:flex;justify-content:space-between;">
                                                 <div class="col s4 ">
-                                                    <i class="material-icons icons-small" >person</i>
-                                                    <!-- <small>  -->
+                                                    <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+
+                                                   <small>
+                                                    <b> 
                                                         2.5k
-                                                    <!-- </small> -->
-                                                    <!-- <span class="b" style="margin-top:-10px;" >2.5k</span> -->
+                                                    </b>
+                                                   </small>
+                                                   
                                                 </div>
                                                 <div class="col s4">
+                                                    <small>
+                                                        <b> 
+                                                            4.5k
+                                                        </b>
+                                                    </small>
+                                                    
                                                     <i class="material-icons yellow-text icons-small">star</i>
-                                                    <span>2.5k</span>
                                                 </div>
                                                 <div class="col s4">
-                                                    <!-- <span>01h 25m</span> -->
-                                                    <i class="material-icons icons-small">slow_motion_video</i>
-                                                    01h 25m
+                                                    <small>
+                                                        <b> 01h 25m </b>
+                                                    </small>
                                                 </div>
                                             </div>
                                         </div>
@@ -551,7 +584,7 @@
             <section>
                 <div class="dashboard-snippet pb-100 full-w" style="margin-top:100px;">
                     <div class="row">
-                        <div class="col s12  m6">
+                        <div class="col s12  m5">
                             <div class="container">
                                 <div class="pl-50 mt-120 " style="width:500px;">
                                     <h2 class="primary-color">
@@ -562,13 +595,13 @@
                                     <article class="grey-text">
                                         Seamlessly maximize user friendly communities whereas customer directed results.
                                     </article><br>
-                                    <a href="#" class="btn-large btn-flat btn-large-primary outline ">
+                                    <a href="#" class="btn-flat btn-primary outline ">
                                         Browse courses
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m6 z-depth-2 " style="padding:0px !important;background:transparent !important;">
+                        <div class="col s12 m7 z-depth-2 " style="padding:0px !important;background:transparent !important;">
                             <div class="dashboard-snippet-image "></div>
                         </div>
                     </div>
@@ -715,3 +748,4 @@ $(document).ready(function(){
 </script>
 </body>
 </html>
+
