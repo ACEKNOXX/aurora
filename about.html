@@ -4,8 +4,303 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap');
+    @font-face {
+        font-family: gordita;
+        src: url('assets/fonts/Gordita\ Black.otf');
+    }
+    
+    .nav-wrapper>ul>li>{
+        color:#333;
+    }
+    .btn,.btn-large,.btn-small,.btn-medium,.btn-flat{
+        text-transform: capitalize;
+    }
+    .btn-primary{
+        border:2px solid #009649 !important;
+        opacity:0.8;
+        color: #009649;
+        border-radius:6px !important;
+        padding:0px 30px;
+    }
+    .btn-primary:hover,.outline{
+        background:#009649 !important;
+        color:#fff;
+    }
+    .btn-large-primary{
+        min-width:250px;
+        border-radius:5px;
+        padding-top:px;
+        padding-bottom:10px;
+    }
+    .outline{
+        border:1px solid #009649 !important;
+        background:#fff !important;
+        color: #009649;
+    }
+    .container{
+        width:83%;
+    }
+    .full-w{
+        width:100% !important;
+    }
+    .b{
+        border:2px dashed red;
+    }
+    .card-panel,.card,.card>.card-image{
+        border-radius:20px;
+    }
+    .icons-small{
+        font-size:15px !important;
+    }
+    .gordita{
+        font-family: 'Gorditas', cursive !important;
+    }
+    .primary-color{color:#002044;}
+    .bg-primary{background:#002044;color:#ffffff;}
+    .secondary-color{color:#009649;}
+    .pl-50{padding-left:50px;}
+    .pl-100{padding-left:100px;}
+    .pl-120{padding-left:120px;}
+    .pb-25{padding-bottom:25px;}
+    .pb-50{padding-bottom:50px;}
+    .pb-100{padding-bottom:100px;}
+    .pb-120{padding-bottom:120px;}
+    .pt-25{padding-top:25px;}
+    .pt-50{padding-top:50px;}
+    .pt-100{padding-top:100px;}
+    .pt-120{padding-top:120px;}
+    .mt-25{margin-top:25px;}
+    .mt-50{margin-top:50px;}
+    .mt-100{margin-top:100px;}
+    .mt-120{margin-top:120px;}
+
+    .footer-nav>a>h6{
+        margin:16px 0px !important;
+    }
+
+    /* custom style */
+    .about-banner{
+        /* background:url("assets/Aurora_images/About\ us\ image\ hero\ image-min.png"); */
+        background-repeat: no-repeat;
+        /* background-position: bottom; */
+        width: 100%;
+        height: 680px;
+    }
+    .about-hero-right{
+        background:url("assets/Aurora_images/About\ us\ image\ hero\ image-min.png");
+        background-repeat: no-repeat;
+        background-position:left center;
+        background-size:cover;
+        width: 100%;
+        height: 680px;
+    }
+    .about-hero-overlay,.about-hero-overlay-2{
+        background-image: linear-gradient(-90deg,#002044,rgb(4, 9, 14));
+        position: absolute;
+        min-height:680px;
+        width:100%;
+        opacity:0.4;
+    }
+    .about-hero-overlay-2{
+        opacity:0.9;
+        background-image: linear-gradient(-90deg,rgb(4, 9, 14),#002044);
+    }
+
+    .about-hero-content{
+        position: absolute;
+        z-index:1;
+    }
+</style>
 </head>
 <body>
-    
+    <!-- header section -->
+        <header>
+        <nav class="white">
+        <div class="container  nav-wrapper">
+            <a href="#!" class="brand-logo black-text">
+                <img src="assets/logos/Logo blue version.svg" style="margin-top:10px;" alt="">
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right  hide-on-med-and-down " style="width:70%; height:53px;">
+                    <li class="">
+                        <div class="">
+                            <a href="index.html" class="black-text" >
+                                Home
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="explore.html" class="black-text" >
+                                Explore
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="grey-text text-darken-3">Community</a>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#" class="black-text" >
+                                <b>About Us</b>
+                            </a>
+                            <hr class="green" style="margin-top:-20px;width:25px;border:10px;border-radius:3px;height:5px;margin-left:15px;">
+                        </div>
+                    </li>
+                <li class="right">
+                    <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">Login</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        
+        <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+                    
+    </header>
+<!-- header section-->
+
+    <!-- About banner section -->
+    <section>
+        <div class="about-banner">
+            <div class="about-hero-overlay"></div>
+            <div class="row full-w" style="position:absolute;">
+                <div class="col s5"></div>
+                <div class="col s7 about-hero-right"></div>
+            </div>
+            <div class="about-hero-overlay-2"></div>
+            <div class="about-hero-content row container">
+                <div class="col s12 m6">
+                    <div class=" container ">
+                        <h4 class="white-text center">Explore! We have something for you</h4>
+                        <div class="row  container" style="margin-top:-28px;width:550px;">
+                            <div class="col s6"></div>
+                            <div class="col s4"></div>
+                            <div class="col  s2 pink" style="height:15px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- About banner section -->
+
+     <!-- footer -->
+     <footer>
+        <div class="footer bg-primary" style="min-height:300px;">
+            <div class="container row">
+                <div class="col mt-50 s12  m3">
+                   <img class="mt-25" src="assets/logos/logo white version.svg" alt="">
+                   <div class="col  s12">
+                    <small>
+                        <p>&#169; 2020 Aurora.All rights reserved   </p>
+                    </small>
+                   </div>
+                </div>
+                <div class="col mt-50  s12  m6">
+                    <div class="col s4">
+                        <h6 style="font-size:22px;"> Quick links </h6>
+                        <div class="mt-25 footer-nav">
+                            <a href="#" class="white-text"><h6>Home</h6> </a>
+                            <a href="#" class="white-text"><h6>Explore</h6> </a>
+                            <a href="#" class="white-text"><h6>Community</h6> </a>
+                            <a href="#" class="white-text"><h6>About Us</h6> </a>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <h6 style="font-size:22px;"> Courses </h6>
+                        <div class="mt-25 footer-nav">
+                            <a href="#" class="white-text"><h6>Public finance</h6> </a>
+                            <a href="#" class="white-text"><h6>Business finance</h6> </a>
+                           
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <h6 style="font-size:22px;"> Company </h6>
+                        <div class="mt-25 footer-nav">
+                            <a href="#" class="white-text"><h6>Help & support</h6> </a>
+                            <a href="#" class="white-text"><h6>Terms of use</h6> </a>
+                            <a href="#" class="white-text"><h6>Contact Us</h6> </a>
+                            <a href="#" class="white-text"><h6>Privacy</h6> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col  s12 mt-50  m3">
+                    <h6 style="font-size:22px;"> Subscribe to mailing list </h6>
+                    <input class="subscibe-input mt-50" placeholder="Email address" type="text" style="font-size:15px !important; border:1px solid #eee;width:250px;padding:2px 8px;border-radius:5px;color:#eee !important;">
+                    <button class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger" style="height:45px; border-radius: 8px;">Subcribe now !</button>
+                    <!-- <div class="b" style="width:200px;"> -->
+                        <!-- <img src="assets/Aurora_icons/facebook logo.svg" alt=""> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- modal section -->
+<div id="modal1" class="modal " style="border-radius:30px; height:850px !important;overflow: hidden !important;background: #FEFEFE !important;">
+    <div class="modal-content  " style="height:750 !important;">
+        <div class="row" id="login-form" style="height:750 !important;">
+            <div class="right">
+                <a href="#!" class="right modal-close black-text"> 
+                    <i class="material-icons black-text">close</i> 
+                </a>
+            </div>
+            <div class="col  s12 center ">
+                <h4 >Welcome back !</h4>
+                <p>Enjoy unlimited learning experience</p>
+            </div>
+            <div class="pt-25">
+                <div class="form-section-1 mt-25 row">
+                    <div class="col s12 m3"></div>
+                    <div class=" col s12 m6" style="padding-top:0px !important;">
+                        <label for="email" class="grey-text">Email address</label>
+                        <input class="subscibe-input mt-50 full-w" placeholder="Email address" type="text" style="font-size:15px !important; border:1px solid grey;width:250px;padding:2px 8px;border-radius:5px;">
+                    </div>
+                    <div class="col s12 m3"></div>
+                </div>
+                <div class="form-section-1 mt-25 row">
+                    <div class="col s12 m3"></div>
+                    <div class=" col s12 m6" style="padding-top:0px !important;">
+                        <label for="password" class="grey-text">Password</label>
+                        <input class="subscibe-input mt-50 full-w" placeholder="Password" type="text" style="font-size:15px !important; border:1px solid grey;width:250px;padding:2px 8px;border-radius:5px;">
+                    </div>
+                    <div class="col s12 m3"></div>
+                </div>
+                <div class="form-section-1 mt-25 row">
+                    <div class="col s12 m3"></div>
+                        <button type="button" class="btn-large btn-flat col s12 m6 btn-large-primary white-text green" style="margin-left:10px;" >Log in </button>
+                    <div class="col s12 m3"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="modal-footer center">
+        <div class="full-w center">
+            <p>Don’t have account yet? <span class="green-text">Join Aurora today</span> </p>
+        </div>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.modal').modal();
+
+    $('.tabs').tabs();
+});
+</script>
 </body>
 </html>
