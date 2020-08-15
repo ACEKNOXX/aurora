@@ -162,6 +162,9 @@
                     <li>
                         <a href="about.html" class="grey-text text-darken-3">About Us</a>
                     </li>
+                    <li>
+                        <a href="#modal-pricing"  class="grey-text text-darken-3  modal-trigger">Pricing calculator</a>
+                    </li>
                     <li class="right">
                         <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">Login</a>
                     </li>
@@ -798,6 +801,56 @@
 
     
 <!-- modal section -->
+<div id="modal-pricing" class="modal " style="width:450px !important; max-height: 100%; overflow: visible">
+    <div class="modal-content ">
+        <div class="right">
+            <a href="#!" class="right modal-close black-text red lighten-4" 
+            style="border-radius:100%;width:25px;height:25px;padding:4px 4px;"> 
+                <i class="material-icons red-text" style="font-size:16px;">close</i> 
+            </a>
+        </div>
+        <div class="container" style="width:95%;">
+            <div class="col  s12 left " style="">
+                <h5 style="font-weight: 500;
+                font-size: 23px;
+                line-height: 46px;color: #002044;">Interest calculator</h5>
+                <small>Choose any pricing plan today and learn how to grow your investments.</small>
+                <hr class="red-text" style="border:1px solid #eee;">
+            </div>
+            <p>How much do you want to save?</p>
+            <div class=" col s12 full-w" style="display:flex;">
+                <input id="last_name" placeholder="NGN 0.00" type="text" class="validate"style="width:75% !important;">
+                <select style="width:25% !important;">
+                    <option value="" selected>month</option>
+                    <option value="1">Option 1</option>
+                </select>
+            </div>
+            <p>For how long?</p>
+            <div class=" col s12 full-w" style="display:flex;">
+                <input placeholder="0" type="text" class="validate"style="width:75% !important;">
+                <select style="width:25% !important;">
+                    <option value="" selected>month</option>
+                    <option value="1">Option 1</option>
+                </select>
+            </div>
+            <p>Interest rate in % per annum</p>
+            <div class=" col s12 full-w" style="display:flex;">
+                <input placeholder="0" type="text" class="validate"style="width:75% !important;">
+                <select style="width:25% !important;">
+                    <option value="" selected>month</option>
+                    <option value="1">Option 1</option>
+                </select>
+            </div>
+            <div class="full-w row pt-25">
+                <button class="btn-flat btn- col s12 green center white-text">Calculate</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a>
+    </div>
+</div>
 <div id="modal1" class="modal " style="border-radius:30px; height:850px !important;overflow: hidden !important;background: #FEFEFE !important;">
     <div class="modal-content  " style="height:750 !important;">
         <div class="row" id="login-form" style="height:750 !important;">
@@ -849,6 +902,7 @@ $(document).ready(function(){
     $('.modal').modal();
 
     $('.tabs').tabs();
+    $('select').formSelect();
 });
 </script>
 </body>
