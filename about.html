@@ -64,9 +64,13 @@
     .primary-color{color:#002044;}
     .bg-primary{background:#002044;color:#ffffff;}
     .secondary-color{color:#009649;}
+    .pl-25{padding-left:25px;}
     .pl-50{padding-left:50px;}
     .pl-100{padding-left:100px;}
     .pl-120{padding-left:120px;}
+    .pr-50{padding-right:50px;}
+    .pr-100{padding-right:100px;}
+    .pr-120{padding-right:120px;}
     .pb-25{padding-bottom:25px;}
     .pb-50{padding-bottom:50px;}
     .pb-100{padding-bottom:100px;}
@@ -90,7 +94,7 @@
         background-repeat: no-repeat;
         /* background-position: bottom; */
         width: 100%;
-        height: 680px;
+        height: 600px;
     }
     .about-hero-right{
         background:url("assets/Aurora_images/About\ us\ image\ hero\ image-min.png");
@@ -98,12 +102,12 @@
         background-position:left center;
         background-size:cover;
         width: 100%;
-        height: 680px;
+        height: 600px;
     }
     .about-hero-overlay,.about-hero-overlay-2{
         background-image: linear-gradient(-90deg,#002044,rgb(4, 9, 14));
         position: absolute;
-        min-height:680px;
+        min-height:600px;
         width:100%;
         opacity:0.4;
     }
@@ -115,6 +119,14 @@
     .about-hero-content{
         position: absolute;
         z-index:1;
+        margin:0px auto !important;
+    }
+    .sec-on-hero{
+        background: url("assets/Aurora_images/About\ us\ page\ image\ 2-min.png");
+        background-repeat: no-repeat;
+        background-size:fit;
+        background-position: center; 
+        height:400px;       
     }
 </style>
 </head>
@@ -175,29 +187,58 @@
         <div class="about-banner">
             <div class="about-hero-overlay"></div>
             <div class="row full-w" style="position:absolute;">
-                <div class="col s5"></div>
-                <div class="col s7 about-hero-right"></div>
+                <div class="col s4"></div>
+                <div class="col s8 about-hero-right"></div>
             </div>
             <div class="about-hero-overlay-2"></div>
-            <div class="about-hero-content row container">
-                <div class="col s12 m6">
-                    <div class=" container ">
-                        <h4 class="white-text center">Explore! We have something for you</h4>
-                        <div class="row  container" style="margin-top:-28px;width:550px;">
-                            <div class="col s6"></div>
-                            <div class="col s4"></div>
-                            <div class="col  s2 pink" style="height:15px;"></div>
-                        </div>
+            <div class="about-hero-content pt-100  row container full-w">
+                <div class="col mt-120 s12 m6">
+                    <h4 class="white-text center" style="margin-left:-20px;">
+                        Get to know about Aurora
+                    </h4>
+                    <div class="row  container" style="margin:-28px auto 0px auto !important;width:400px;">
+                        <div class="col s6"></div>
+                        <div class="col s4"></div>
+                        <div class="col  s2 pink" style="height:15px;"></div>
+                    </div>
+                    <div class=" mt-25 pl-100   white-text">
+                        <article>
+                            The whole idea of Aurora Financial Literacy with KWO is to share with people how you can grow investments, savings or other source of income . Financial literacy is about unlearning our old habits and learning new ones a lot of us need to take 
+                            a step back to refocus and get our finances back in order.
+                        </article>
                     </div>
                 </div>
+                <div class="col s12 m6 "></div>
             </div>
             
         </div>
     </section>
     <!-- About banner section -->
 
+    <!-- sections one -->
+    <section>
+        <div class="section-one row pt-50 mt-50  full-w" style="min-height:500px;">
+            <div class="col s12 m6 sec-on-hero">
+
+            </div>
+            <div class="col s12 m6">
+                <div class="container mt-50 right  pt-25 pr-120" style="width:80%;">
+                    <h6 class="right " style="color: #353535;font-weight: 500;
+                    font-size: 20px;line-height: 28px;">A little about Aurora</h6>
+                    <p class="mt-50" style="text-align:right;color: rgba(53, 53, 53, 0.9);" >
+                        We at Aurora saw a lot of people in the corporate private sector especially women were always broke and borrwing money to meet their financial needs
+                    </p>
+                    <p style="text-align:right;color:rgba(53, 53, 53, 0.9);">
+                        Many don’t know how to save, build investments or manage their lifestyle. Dependence on monthly salary without any other source of income also led to this initiative, thus we all need a refresh or restart in the approach to our finance
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section one -->
+
      <!-- footer -->
-     <footer>
+    <footer>
         <div class="footer bg-primary" style="min-height:300px;">
             <div class="container row">
                 <div class="col mt-50 s12  m3">
