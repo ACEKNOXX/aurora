@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="assets/fonts/Chronicle Display Black.otf">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap');
+        @font-face {
+            font-family: gordita;
+            src: url('assets/fonts/Gordita\ Black.otf');
+        }
+        /* body{
+            
+        } */
+        .nav-wrapper>ul>li>{
+            color:#333;
+        }
+        .btn,.btn-large,.btn-small,.btn-medium,.btn-flat{
+            text-transform: capitalize;
+        }
+        .btn-primary{
+            border:2px solid #009649 !important;
+            opacity:0.8;
+            color: #009649;
+            border-radius:6px !important;
+            padding:0px 30px;
+        }
+        .btn-primary:hover,.outline{
+            background:#009649 !important;
+            color:#fff;
+        }
+        .btn-large-primary{
+            min-width:250px;
+            border-radius:5px;
+            padding-top:px;
+            padding-bottom:10px;
+        }
+        .outline{
+            border:1px solid #009649 !important;
+            background:#fff !important;
+            color: #009649;
+        }
+        .container{
+            width:83%;
+        }
+        .full-w{
+            width:100% !important;
+        }
+        .b{
+            border:2px dashed red;
+        }
+        .card-panel,.card,.card>.card-image{
+            border-radius:20px;
+        }
+        .icons-small{
+            font-size:15px !important;
+        }
+        .gordita{
+            font-family: 'Gorditas', cursive !important;
+        }
+        
+        .primary-color{color:#002044;}
+        .bg-primary{background:#002044;color:#ffffff;}
+        .secondary-color{color:#009649;}
+        .pl-50{padding-left:50px;}
+        .pl-100{padding-left:100px;}
+        .pl-120{padding-left:120px;}
+        .pb-25{padding-bottom:25px;}
+        .pb-50{padding-bottom:50px;}
+        .pb-100{padding-bottom:100px;}
+        .pb-120{padding-bottom:120px;}
+        .pt-25{padding-top:25px;}
+        .pt-50{padding-top:50px;}
+        .pt-100{padding-top:100px;}
+        .pt-120{padding-top:120px;}
+        .mt-25{margin-top:25px;}
+        .mt-50{margin-top:50px;}
+        .mt-100{margin-top:100px;}
+        .mt-120{margin-top:120px;}
+        .mb-25{margin-bottom:25px;}
+        .mb-50{margin-bottom:50px;}
+        .mb-100{margin-bottom:100px;}
+        .mb-120{margin-bottom:120px;}
+        .tabs .tab a{
+            color:green;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color:green;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            /* background-color:#c8e6c9; */
+            color:green;
+           
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            /* background-color:#c8e6c9; */
+            border-bottom:2px solid green;
+        } 
+        .footer-nav>a>h6{
+            margin:16px 0px !important;
+        }
+        /* config style ends h ere */
+        .banner{
+            height:auto !important;
+            background:#002044;
+            padding:50px 0px ;
+            min-height:550px;
+        }
+        
+        
+        .subscibe-input>::placeholder{
+            color:#eee !important;
+        }
+        .card-info-right{
+            background: url("assets/Aurora_images/Courses\ card\ image-min.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:fit;
+            height:524px;
+            border-radius: 0px 20px 20px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- header section -->
+        <header>
+            <nav class="white">
+            <div class="container  nav-wrapper">
+                <a href="index.html" class="brand-logo black-text">
+                    <img src="assets/logos/Logo blue version.svg" style="margin-top:10px;" alt="">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right  hide-on-med-and-down " style="width:70%; height:53px;">
+                    <li class="">
+                        <div class="">
+                            <a href="#" class="black-text" >
+                                <b>Home</b>
+                            </a>
+                            <hr class="green" style="margin-top:-20px;width:25px;border:10px;border-radius:3px;height:5px;margin-left:15px;">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="explore.html"  class="grey-text text-darken-3">Explore</a>
+                    </li>
+                    <li>
+                        <a href="community.html" class="grey-text text-darken-3">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="grey-text text-darken-3">Community</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="grey-text text-darken-3">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#modal-pricing"  class="grey-text text-darken-3  modal-trigger">Pricing calculator</a>
+                    </li>
+                    <li class="right">
+                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">Login</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+            
+            <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+                      
+        </header>
+    <!-- header section-->
+
+    <!-- banner section -->
+        <section>
+            <div class="banner ">
+                <div class="container white  row z-depth-2" style="border-radius:20px;">
+                    <div class="col  s12 m6 mt-50 mb-50">
+                        <div class="container ">
+                            <h6 style="font-weight: 500;
+                            font-size: 45px;
+                            line-height: 71px;
+                            color: #002044;">
+                                Financial marketing
+                               
+                            </h6>
+                            <p style="font-weight: normal;
+                                font-size: 16px;
+                                line-height: 23px;
+                                color: #002044;">
+                                Chukwuemeka Doe
+                            </p>
+                            <article style="font-weight: normal;
+                            font-size: 13px;
+                            line-height:26px;
+                            color: rgba(53, 53, 53, 0.9);">
+                                Efficiently provide access to future-proof quality vectors with B2C platforms. Intrinsicly negotiate competitive interfaces before intermandated schemas. Continually underwhelm multimedia based functionalities for timely benefits. Dynamically.
+                            </article>
+                            <div class="" style="width:210px; display:flex;justify-content:space-between;padding:10px 0px;margin-left:-13px !important;">
+                                <div class="col s4">
+                                    <img src="assets/Aurora_icons/my account icon.svg" height="12px" alt="" srcset="">
+                                    <small>
+                                        <b> 
+                                            2.5k
+                                        </b>
+                                    </small>
+                                </div>
+                                <div class="col s4">
+                                    <small>
+                                        <b> 
+                                            4.5k
+                                        </b>
+                                    </small>
+                                    
+                                    <i class="material-icons yellow-text icons-small">star</i>
+                                </div>
+                                <div class="col s4">
+                                    <small>
+                                        <b> 01h 25m </b>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="" style="width:210px; display:flex;justify-content:space-between;margin-left:-13px !important;">
+                                <div class="col s4 left">
+                                    <img src="assets/Aurora_icons/Saved courses icon.svg" height="12px" alt="" srcset="">
+                                    <small>
+                                        <b> 
+                                            4.5k
+                                        </b>
+                                    </small>
+                                </div>
+                                <div class="col s4 left" >
+                                    <i class="material-icons  icons-small">share</i>
+                                    <small>
+                                        <b> 
+                                            2.5k
+                                        </b>
+                                    </small>
+                                </div>
+                                <div class="col s4"></div>
+                                
+                            </div>
+                            <div class="mt-25 full-w">
+                                <a href="#modal1" class="btn-flat col s3 center btn-large green lighten-4 waves-effect waves-light btn " 
+                                style="width:150px;border-radius:8px;">
+                                    <b class=" green-text text-lighten-1">Enroll now</b>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 card-info-right"></div>
+                </div>
+            </div>
+        </section>
+    <!-- banner sectiion -->
+
+
+    <!-- main section -->
+        <main>
+            <div class="main-cours-info full-w">
+                <div class="container row pt-50 ">
+                    <div class="col  s12 m6">
+                        <ul class="tabs pb-50 row" style="border-bottom:2px solid #eee ;">
+                            <li class="tab col s4 " >
+                                <a class="active "  href="#test-swipe-1" ">About</a>
+                            </li>
+                            <li class="tab col  s4">
+                                <a class="green-text"  href="#test-swipe-2" ">Review(56)</a>
+                            </li>
+                            <li class="tab col  s4">
+                                <a class="green-text"  href="#test-swipe-3" ">Discussion</a>
+                            </li>
+                        </ul>
+                        <div id="test-swipe-1" class="col  s12">
+                            <div class="pb-50 article-section">
+                                <h6 class="" style="color: #353535;font-weight: 500;
+                                font-size: 18px;line-height: 28px;">A little about Aurora</h6>
+                                <article>
+                                    Seamlessly maximize user friendly communities whereas customer directed results. Professionally productize impactful portals through standardized ROI. Energistically initiate client-centric results with value-added vortals. Dramatically actualize innovative human capital vis-a-vis interactive total linkage innovative human capital vis-a-vis interactive total .
+                                </article>
+                            </div>
+                            <div class="pb-50 article-section">
+                                <h6 class="" style="color: #353535;font-weight: 500;
+                                font-size: 18px;line-height: 28px;">What you will learn in financial marketing</h6>
+                                <article>
+                                    Seamlessly maximize user friendly communities whereas customer directed results. Professionally productize impactful portals through standardized ROI. Energistically initiate client-centric results with value-added vortals. Dramatically actualize innovative human capital vis-a-vis interactive total linkage innovative human capital vis-a-vis interactive total .
+                                </article>
+                            </div>
+                        </div>
+                        <div id="test-swipe-2" class="col s12">
+                            <div class="pb-50 article-section">
+                                <h6 class="" style="color: #353535;font-weight: 500;
+                                font-size: 18px;line-height: 28px;">A little about Aurora</h6>
+                                <article>
+                                    Seamlessly maximize user friendly communities whereas customer directed results. Professionally productize impactful portals through standardized ROI. Energistically initiate client-centric results with value-added vortals. Dramatically actualize innovative human capital vis-a-vis interactive total linkage innovative human capital vis-a-vis interactive total .
+                                </article>
+                            </div>
+                        </div>
+                        <div id="test-swipe-3" class="col s12">
+                            <div class="pb-50 article-section">
+                                <h6 class="" style="color: #353535;font-weight: 500;
+                                font-size: 18px;line-height: 28px;">What you will learn in financial marketing</h6>
+                                <article>
+                                    Seamlessly maximize user friendly communities whereas customer directed results. Professionally productize impactful portals through standardized ROI. Energistically initiate client-centric results with value-added vortals. Dramatically actualize innovative human capital vis-a-vis interactive total linkage innovative human capital vis-a-vis interactive total .
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col b  s12 m6">
+                        <div class="container">
+                            <h6 class=" pb-25" style="font-weight: 500;
+                            font-size: 25px;
+                            line-height: 26px;color: #002044;">
+                            Course outline</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <!-- main section -->
+
+    <!-- footer -->
+        <footer>
+            <div class="footer bg-primary" style="min-height:300px;">
+                <div class="container row">
+                    <div class="col mt-50 s12  m3">
+                       <img class="mt-25" src="assets/logos/logo white version.svg" alt="">
+                       <div class="col  s12">
+                        <small>
+                            <p>&#169; 2020 Aurora.All rights reserved   </p>
+                        </small>
+                       </div>
+                    </div>
+                    <div class="col mt-50  s12  m6">
+                        <div class="col s12 m4 ">
+                            <h6 style="font-size:22px;"> Quick links </h6>
+                            <div class="mt-25 footer-nav">
+                                <a href="#" class="white-text"><h6>Home</h6> </a>
+                                <a href="#" class="white-text"><h6>Explore</h6> </a>
+                                <a href="#" class="white-text"><h6>Community</h6> </a>
+                                <a href="#" class="white-text"><h6>About Us</h6> </a>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <h6 style="font-size:22px;"> Courses </h6>
+                            <div class="mt-25 footer-nav">
+                                <a href="#" class="white-text"><h6>Public finance</h6> </a>
+                                <a href="#" class="white-text"><h6>Business finance</h6> </a>
+                               
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <h6 style="font-size:22px;"> Company </h6>
+                            <div class="mt-25 footer-nav">
+                                <a href="#" class="white-text"><h6>Help & support</h6> </a>
+                                <a href="terms.html" class="white-text"><h6>Terms of use</h6> </a>
+                                <a href="#" class="white-text"><h6>Contact Us</h6> </a>
+                                <a href="#" class="white-text"><h6>Privacy</h6> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col  s12 mt-50  m3">
+                        <h6 style="font-size:22px;"> Subscribe to mailing list </h6>
+                        <input class="subscibe-input mt-50" placeholder="Email address" type="text" style="font-size:15px !important; border:1px solid #eee;width:250px;padding:2px 8px;border-radius:5px;color:#eee !important;">
+                        <button class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger" style="height:45px; border-radius: 8px;">Subcribe now !</button>
+                        <!-- <div class="b" style="width:200px;"> -->
+                            <!-- <img src="assets/Aurora_icons/facebook logo.svg" alt=""> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+   
+
+    
+<!-- modal section -->
+<div id="modal-pricing-plan" class="modal " style=" max-height: 500px; overflow: visible; border-radius:30px; height:850px !important;overflow: hidden !important;background: #FEFEFE !important;">
+    <div class="modal-content  " style="height:750 !important;">
+        <div class="row" id="login-form" style="height:750 !important;">
+            <div class="right">
+                <a href="#!" class="right modal-close black-text"> 
+                    <i class="material-icons black-text">close</i> 
+                </a>
+            </div>
+            <div class="col  s12 center " style="margin-top:-30px;">
+                <h4 style="font-weight: 500;
+                font-size: 32px;
+                line-height: 46px;color: #002044;">Pick Your Plan!</h4>
+                <p>Choose any pricing plan today and learn how to grow your investments.</p>
+            </div>
+            <div class="container row" >
+                <div class="col s6">
+                    <div class="card-panel" style="padding:0px;width:280px;height:290px;background-color:#FAFAFA;">
+                        <div class="center pt-25" style="background:#EF8836;height:100px;border-radius:20px 20px 0px 0px;">
+                            <h5 class="white-text" style="font-weight: 500;
+                            font-size: 32px;
+                            line-height: 46px;">Basic</h5>
+                        </div>
+                        <div class="center">
+                            <span>
+                                <h4 class="pt-25" style="font-weight: normal;
+                               
+                                line-height: 32px;color:#353535;">
+                                  <small style="font-size:20px;"> ₦</small><b>10000</b>    
+                                </h3>
+                                <small style="font-weight: normal;
+                                font-size: 16px;
+                                line-height: 23px;color:rgba(53, 53, 53, 0.8);">
+                                for 3months</small>
+                            </span>
+                           
+                        </div>
+                        <div class="center mt-25">
+                            <div class="col s3"></div>
+                            <a class="col s6  btn-flat   btn-primary transparent waves-effect waves-light btn modal-trigger" 
+                            style="height:45px;">
+                                Join Aurora
+                            </a>
+                            <div class="col s3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="card-panel" style="padding:0px;width:290px;height:290px;background-color:#FAFAFA;">
+                        <div class="center pt-25" style="background:rgba(216, 20, 58, 0.8);height:100px;border-radius:20px 20px 0px 0px;">
+                            <h5 class="white-text" style="font-weight: 500;
+                            font-size: 32px;
+                            line-height: 46px;">Pro</h5>
+                        </div>
+                        <div class="center">
+                            <span>
+                                <h4 class="pt-25" style="font-weight: normal;
+                               
+                                line-height: 32px;color:#353535;">
+                                  <small style="font-size:20px;"> ₦</small><b>10000</b>    
+                                </h3>
+                                <small style="font-weight: normal;
+                                font-size: 16px;
+                                line-height: 23px;color:rgba(53, 53, 53, 0.8);">
+                                for 6months</small>
+                            </span>
+                            
+                        </div>
+                        <div class="center mt-25">
+                            <div class="col s3"></div>
+                            <a class="col s6  btn-flat   btn-primary green waves-effect waves-light btn modal-trigger" 
+                            style="height:45px;background:#009649 !important;
+                            color:#fff;">
+                                Join Aurora
+                            </a>
+                            <div class="col s3"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+    <div class="modal-footer center">
+        <div class="full-w center">
+            <p>Don’t have account yet? <span class="green-text">Join Aurora today</span> </p>
+        </div>
+    </div>
+</div>
+<div id="modal-pricing" class="modal " style="width:450px !important; max-height: 100%; overflow: visible;">
+    <div class="modal-content ">
+        <div class="right">
+            <a href="#!" class="right modal-close black-text red lighten-4" 
+            style="border-radius:100%;width:25px;height:25px;padding:4px 4px;"> 
+                <i class="material-icons red-text" style="font-size:16px;">close</i> 
+            </a>
+        </div>
+        <div class="container" style="width:95%;">
+            <div class="col  s12 left " >
+                <h5 style="font-weight: 500;
+                font-size: 23px;
+                line-height: 46px;color: #002044;">Interest calculator</h5>
+                <small>Choose any pricing plan today and learn how to grow your investments.</small>
+                <hr class="red-text" style="border:1px solid #eee;">
+            </div>
+            <p>How much do you want to save?</p>
+            <div class=" col s12 full-w" style="display:flex;">
+                <input id="last_name" placeholder="NGN 0.00" type="text" class="validate"style="width:75% !important;">
+                <select style="width:25% !important;">
+                    <option value="" selected>month</option>
+                    <option value="1">Option 1</option>
+                </select>
+            </div>
+            <p>For how long?</p>
+            <div class=" col s12 full-w" style="display:flex;">
+                <input placeholder="0" type="text" class="validate"style="width:100% !important;">
+                <!-- <select style="width:25% !important;">
+                    <option value="" selected>month</option>
+                    <option value="1">Option 1</option>
+                </select> -->
+            </div>
+            <p>Interest rate in % per annum</p>
+            <div class=" col s12 full-w" style="display:flex;">
+                <input placeholder="0" type="text" class="validate"style="width:100% !important;">
+                <!-- <select style="width:25% !important;">
+                    <option value="" selected>month</option>
+                    <option value="1">Option 1</option>
+                </select> -->
+            </div>
+            <div class="full-w row pt-25">
+                <button class="btn-flat btn- col s12 green center white-text">Calculate</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a>
+    </div>
+</div>
+<div id="modal1" class="modal " style="border-radius:30px; height:850px !important;overflow: hidden !important;background: #FEFEFE !important;">
+    <div class="modal-content  " style="height:750 !important;">
+        <div class="row" id="login-form" style="height:750 !important;">
+            <div class="right">
+                <a href="#!" class="right modal-close black-text"> 
+                    <i class="material-icons black-text">close</i> 
+                </a>
+            </div>
+            <div class="col  s12 center ">
+                <h4 >Welcome back !</h4>
+                <p>Enjoy unlimited learning experience</p>
+            </div>
+            <div class="pt-25">
+                <div class="form-section-1 mt-25 row">
+                    <div class="col s12 m3"></div>
+                    <div class=" col s12 m6" style="padding-top:0px !important;">
+                        <label for="email" class="grey-text">Email address</label>
+                        <input class="subscibe-input mt-50 full-w" placeholder="Email address" type="text" style="font-size:15px !important; border:1px solid grey;width:250px;padding:2px 8px;border-radius:5px;">
+                    </div>
+                    <div class="col s12 m3"></div>
+                </div>
+                <div class="form-section-1 mt-25 row">
+                    <div class="col s12 m3"></div>
+                    <div class=" col s12 m6" style="padding-top:0px !important;">
+                        <label for="password" class="grey-text">Password</label>
+                        <input class="subscibe-input mt-50 full-w" placeholder="Password" type="text" style="font-size:15px !important; border:1px solid grey;width:250px;padding:2px 8px;border-radius:5px;">
+                    </div>
+                    <div class="col s12 m3"></div>
+                </div>
+                <div class="form-section-1 mt-25 row">
+                    <div class="col s12 m3"></div>
+                        <button type="button" class="btn-large btn-flat col s12 m6 btn-large-primary white-text green" style="margin-left:10px;" >Log in </button>
+                    <div class="col s12 m3"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="modal-footer center">
+        <div class="full-w center">
+            <p>Don’t have account yet? <span class="green-text">Join Aurora today</span> </p>
+        </div>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.modal').modal();
+
+    $('.tabs').tabs();
+    $('select').formSelect();
+});
+</script>
+</body>
+</html>
+
