@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin(Home)</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap');
+        @font-face {
+            font-family: gordita;
+            src: url('../assets/fonts/Gordita\ Black.otf');
+        }
+        /* body{
+            
+        } */
+        .nav-wrapper>ul>li>{
+            color:#333;
+        }
+        .btn,.btn-large,.btn-small,.btn-medium,.btn-flat{
+            text-transform: capitalize;
+        }
+        .btn-primary{
+            border:2px solid #009649 !important;
+            opacity:0.8;
+            color: #009649;
+            border-radius:6px !important;
+            padding:0px 30px;
+        }
+        .btn-primary:hover,.outline{
+            background:#009649 !important;
+            color:#fff;
+        }
+        .btn-large-primary{
+            min-width:250px;
+            border-radius:5px;
+            padding-top:px;
+            padding-bottom:10px;
+        }
+        .outline{
+            border:1px solid #009649 !important;
+            background:#fff !important;
+            color: #009649;
+        }
+        .container{
+            width:83%;
+        }
+        .full-w{
+            width:100% !important;
+        }
+        .b{
+            border:2px dashed red;
+        }
+        .card-panel,.card,.card>.card-image{
+            border-radius:20px;
+        }
+        .icons-small{
+            font-size:15px !important;
+        }
+        .gordita{
+            font-family: 'Gorditas', cursive !important;
+        }
+        
+        .primary-color{color:#002044;}
+        .bg-primary{background:#002044;color:#ffffff;}
+        .secondary-color{color:#009649;}
+        .pl-50{padding-left:50px;}
+        .pl-100{padding-left:100px;}
+        .pl-120{padding-left:120px;}
+        .pb-25{padding-bottom:25px;}
+        .pb-50{padding-bottom:50px;}
+        .pb-100{padding-bottom:100px;}
+        .pb-120{padding-bottom:120px;}
+        .pt-25{padding-top:25px;}
+        .pt-50{padding-top:50px;}
+        .pt-100{padding-top:100px;}
+        .pt-120{padding-top:120px;}
+        .mt-25{margin-top:25px;}
+        .mt-50{margin-top:50px;}
+        .mt-100{margin-top:100px;}
+        .mt-120{margin-top:120px;}
+        .tabs .tab a{
+            color:green;
+        } /*Black color to the text*/
+
+    </style>
+</head>
+<body >
+
+    <!-- <main> -->
+        <div class="row  " style="position:fixed;width:100% !important;">
+            <div class="col s3 bg-primary" style="height:700px;">
+                <div class="container ">
+                    <div class="dashboard-logo">
+                        <img src="../assets/logos/logo white version.svg" height="90px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col s9 white">
+                <div class="row z-depth-2">
+                    <div class="col s9">
+                        <div class="nav-wrapper">
+                            <form>
+                            <div class="input-field">
+                                <input id="search" type="search" placeholder="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col s3 right" style="display:flex;justify-content:end;">
+                        <div class=" center" style="width:100px;height:55px;padding-top:20px;">
+                            <img src="../assets/Aurora_icons/notification icon.svg" alt="">
+                        </div>
+                        <div class=" center" style="width:100px;height:55px;padding-top:20px;">
+                            <img src="../assets/Aurora_icons/my account icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-main">
+                    <div class="">
+                        <h3 style="
+                            font-size: 48px;
+                            ">
+                            Goodmorning Wike 
+                            <span>
+                                <img src="../assets/Aurora_icons/goodmorning icon.svg" alt="">
+                            </span>
+                        </h3>
+
+                        <h6 style="font-weight: normal;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #353535;"> Wash your hands, stay safe </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4">
+                        <div class="card-panel teal" style="width: 314px;
+                        height: 129px;display:flex;">
+                            <img style="width:50px;" src="../assets/Aurora_icons/Ongoing courses icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    <!-- </main> -->
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.modal').modal();
+
+    $('.tabs').tabs();
+    $('select').formSelect();
+});
+</script>
+</body>
+</html>

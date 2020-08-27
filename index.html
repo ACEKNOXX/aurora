@@ -178,7 +178,9 @@
                 <a href="index.html" class="brand-logo black-text">
                     <img src="assets/logos/Logo blue version.svg" style="margin-top:10px;" alt="">
                 </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons black-text">menu</i>
+                </a>
                 <ul class="right  hide-on-med-and-down " style="width:70%; height:53px;">
                     <li class="">
                         <div class="">
@@ -203,18 +205,31 @@
                     <li>
                         <a href="#modal-pricing"  class="grey-text text-darken-3  modal-trigger">Pricing calculator</a>
                     </li>
+                    <li class="">
+                        <a href="#modal1" class=" grey-text text-darken-3   modal-trigger">Login</a>
+                    </li>
                     <li class="right">
-                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">Login</a>
+                        <a href="#modal1" class="btn-flat btn-primary transparent waves-effect waves-light btn modal-trigger">Register</a>
                     </li>
                 </ul>
             </div>
             </nav>
             
             <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#modal-pricing"  class="grey-text text-darken-3  modal-trigger">Pricing calculator</a>
+                </li>
+                <li class="">
+                    <a href="#modal1" class=" grey-text text-darken-3   modal-trigger">Login</a>
+                </li>
+                <li class="">
+                    <a href="#modal1" class="btn-flat btn-primary transparent waves-effect waves-light btn modal-trigger">Register</a>
+                </li>
             </ul>
                       
         </header>
@@ -223,11 +238,14 @@
     <!-- banner section -->
         <section>
             <div class="banner ">
-                <div class="banner-row-one full-w row p-50">
+                <div class="banner-row-small show-on-medium-and-down hide-on-med-and-up full-w  " style="height:550px;margin-top:-50px;background:url('assets/Aurora_images/homepage\ hero\ image-min.png');background-repeat: no-repeat;">
+
+                </div>
+                <div class="banner-row-one full-w row p-50 hide-on-med-and-down">
                     <div class="col s12  m6">
                         <div class="pl-100 pt-100">
                             <div class="" >
-                                <h3 class="white-text " style="font-family:gordita;"> 
+                                <h3 class="white-text " style="font-family:Gordita;"> 
                                     Finanacial Plannig with <span >
                                      <i> Aurora</i>
                                     </span> 
@@ -625,19 +643,18 @@
                                     </a>
                                     <h6><b> RETIREMENT PLANS</b></h6>
                                 </div>
-                                <span class="black-text">We register your pension funds, create retirement plans and long-term financial options that are available for you.
-
+                                <span class="black-text">
+                                    We register your pension funds, create retirement plans and long-term financial options that are available for you.
                                 </span>
                             </div>
                         </div>
 
-                        
                     </div>
                     <div class="container row">
                         <div class="col s12 center mt-50">
-                             <a href="#" class="btn-large btn-flat btn-large-primary white-text green">
+                             <button type="button" href="#" data-target="modal-pricing-plan" class="btn-large btn-flat btn-large-primary white-text green modal-trigger">
                             Join aurora 
-                        </a>
+                             </button>
                         </div>
                     </div>
                     
@@ -746,21 +763,7 @@
                         <div class="col  s12 m2"></div>
                     </div>
 
-                    <div class="row pb-25  container " style="border-radius:8px; padding:16px;background:#CEDFDC;" >
-                        <div class="col  s12 center m3">
-                            <div class="" style="margin:0px auto !important; width:120px;height:100px;">
-                                <img class="" src="assets/Aurora_images/Ellipse 19-min.png"  width="100px" height="100px"  alt="" srcset="">
-                            </div>
-                            <h6> <b> Godswill Wike</b> </h6>
-                            <small>Student</small>
-                        </div>
-                        <div class="col  s12 m7">
-                            <article class="pt-50">
-                                Seamlessly maximize user friendly communities whereas customer directed results. Professionally productize impactful portals through standardized ROI. Energistically initiate client-centric results with value-added vortals.
-                            </article>
-                        </div>
-                        <div class="col  s12 m2"></div>
-                    </div>
+                    
 
                     <div class="row  container " style="border-radius:8px; padding:16px;background:#CEDFDC;" >
                         <div class="col  s12 center m3">
@@ -799,7 +802,7 @@
                        </div>
                     </div>
                     <div class="col mt-50  s12  m6">
-                        <div class="col s4">
+                        <div class="col s12 m4">
                             <h6 style="font-size:22px;"> Quick links </h6>
                             <div class="mt-25 footer-nav">
                                 <a href="#" class="white-text"><h6>Home</h6> </a>
@@ -808,7 +811,7 @@
                                 <a href="#" class="white-text"><h6>About Us</h6> </a>
                             </div>
                         </div>
-                        <div class="col s4">
+                        <div class="col s12 m4">
                             <h6 style="font-size:22px;"> Courses </h6>
                             <div class="mt-25 footer-nav">
                                 <a href="#" class="white-text"><h6>Public finance</h6> </a>
@@ -816,7 +819,7 @@
                                
                             </div>
                         </div>
-                        <div class="col s4">
+                        <div class="col s12 m4">
                             <h6 style="font-size:22px;"> Company </h6>
                             <div class="mt-25 footer-nav">
                                 <a href="#" class="white-text"><h6>Help & support</h6> </a>
@@ -1028,8 +1031,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
 $(document).ready(function(){
+    $('.sidenav').sidenav();
     $('.modal').modal();
-
     $('.tabs').tabs();
     $('select').formSelect();
 });
