@@ -133,54 +133,69 @@
     </style>
 </head>
 <body>
-    <!-- header section -->
-        <header>
-            <nav class="white">
-            <div class="container  nav-wrapper">
-                <a href="index.html" class="brand-logo black-text">
-                    <img src="assets/logos/Logo blue version.svg" style="margin-top:10px;" alt="">
-                </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right  hide-on-med-and-down " style="width:70%; height:53px;">
-                    <li class="">
-                        <div class="">
-                            <a href="#" class="black-text" >
-                                <b>Home</b>
-                            </a>
-                            <hr class="green" style="margin-top:-20px;width:25px;border:10px;border-radius:3px;height:5px;margin-left:15px;">
-                        </div>
-                    </li>
-                    <li>
-                        <a href="explore.html"  class="grey-text text-darken-3">Explore</a>
-                    </li>
-                    <li>
-                        <a href="community.html" class="grey-text text-darken-3">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#" class="grey-text text-darken-3">Community</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="grey-text text-darken-3">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#modal-pricing"  class="grey-text text-darken-3  modal-trigger">Pricing calculator</a>
-                    </li>
-                    <li class="right">
-                        <a href="#modal1" class="btn-flat  btn-primary transparent waves-effect waves-light btn modal-trigger">Login</a>
-                    </li>
-                </ul>
-            </div>
-            </nav>
-            
-            <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+      <!-- header section -->
+      <header>
+        <nav class="white">
+        <div class="container  nav-wrapper">
+            <a href="index.html" class="brand-logo black-text">
+                <img src="assets/logos/Logo blue version.svg" style="margin-top:10px;" alt="">
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons black-text">menu</i>
+            </a>
+            <ul class="right  hide-on-med-and-down " style="width:70%; height:53px;">
+                <li class="">
+                    <div class="">
+                        <a href="#" class="black-text" >
+                            <b>Home</b>
+                        </a>
+                        <hr class="green" style="margin-top:-20px;width:25px;border:10px;border-radius:3px;height:5px;margin-left:15px;">
+                    </div>
+                </li>
+                <li>
+                    <a href="explore.html"  class="grey-text text-darken-3">Explore</a>
+                </li>
+                <li>
+                    <a href="community.html" class="grey-text text-darken-3">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="grey-text text-darken-3">Community</a>
+                </li>
+                <li>
+                    <a href="about.html" class="grey-text text-darken-3">About Us</a>
+                </li>
+                <li>
+                    <a href="#modal-pricing"  class="grey-text text-darken-3  modal-trigger">Pricing calculator</a>
+                </li>
+                <li class="">
+                    <a href="#modal1" class=" grey-text text-darken-3   modal-trigger">Login</a>
+                </li>
+                <li class="right">
+                    <a href="#modal1" class="btn-flat btn-primary transparent waves-effect waves-light btn modal-trigger">Register</a>
+                </li>
             </ul>
-                      
-        </header>
-    <!-- header section-->
+        </div>
+        </nav>
+        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="#modal-pricing"  class="grey-text text-darken-3  modal-trigger">Pricing calculator</a>
+            </li>
+            <li class="">
+                <a href="#modal1" class=" grey-text text-darken-3   modal-trigger">Login</a>
+            </li>
+            <li class="">
+                <a href="#modal1" class="btn-flat btn-primary transparent waves-effect waves-light btn modal-trigger">Register</a>
+            </li>
+        </ul>
+                  
+    </header>
+<!-- header section-->
 
     <!-- banner section -->
         <section>
@@ -573,6 +588,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
 $(document).ready(function(){
+    $('.sidenav').sidenav();
+
     $('.modal').modal();
 
     $('.tabs').tabs();
