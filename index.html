@@ -172,6 +172,31 @@
             /* background-color:#c8e6c9; */
             border-bottom:2px solid green;
         } 
+        /* custom for meadia quesry */
+        .student-comment-heading{
+            width:500px;min-height:60px;margin:0px auto !important;
+        }
+        .tab-heading-course{
+            width:400px;margin:0px auto !important;
+        }
+        @media only screen and (max-width: 600px) {
+           .container{
+               max-width:97% !important;
+               /* border:2px dashed red !important; */
+               padding-bottom:50px;
+           }
+           .student-comment-heading{
+               width:300px;
+               /* border:2px dashed yellow; */
+               margin-left:-100px;
+           }
+           .tab-heading-course{
+               width:300px;
+           }
+           .tab-container{
+                width:93%;
+           }
+        }
     </style>
 </head>
 <body>
@@ -355,8 +380,8 @@
                     </div>
                 </div>
 
-                <div class="row container ">
-                    <div class="pb-50 " style="width:400px;margin:0px auto !important;">
+                <div class="row container tab-container">
+                    <div class="pb-50 tab-heading-course" >
                         <ul class="tabs " >
                             <li class="tab col   s6 " >
                                 <a class="active "  href="#test-swipe-1" ">Public Finance</a>
@@ -671,7 +696,7 @@
             <section>
                 <div class="dashboard-snippet pb-100 full-w" style="margin-top:100px;">
                     <div class="hide-on-med-and-up" style="margin-top:-100px;">
-                        <div class="pl-50 mt-120 " style="width:400px;">
+                        <div class="container mt-120 " style="width:400px;">
                             <h4 class="primary-color " >
                                 <b>
                                     Learn online,keep
@@ -701,9 +726,9 @@
                                        
                                     </h4>
                                     <div class="" style="width:400px;">
-                                        <article class="grey-text">
+                                        <p class="grey-text">
                                             Seamlessly maximize user friendly communities whereas customer directed results.
-                                        </article><br>
+                                        </p><br>
                                         <a href="#" class="btn-flat btn-primary outline ">
                                             Browse courses
                                         </a>
@@ -723,9 +748,9 @@
             <!-- little-about -->
             <section>
                 <div class="about pb-50 full-w" style="margin-top:100px;">
-                    <div class="row">
+                    <div class="row hide-on-med-and-down">
                         <div class="col s12 m6">
-                            <div class="container">
+                            <div class="container ">
                                 <div class="pl-50 mt-50 " style="width:500px;">
 
                                     <div class="col s12 pb-25 left section-heading" style=" width:400px;min-height:60px;margin:0px auto !important;">
@@ -749,7 +774,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m6" style="padding-right:0px !important;">
+                        <div class="col s12 m6 " style="padding-right:0px !important;">
                             <div class="about-image whote"></div>
                         </div>
                     </div>
@@ -761,7 +786,7 @@
             <section>
                 <div class="feedbacks full-w" style="background:#E5F4ED;padding-bottom:30px !important;">
                     <div class="row">
-                        <div class="pb-25 pt-25 center section-heading" style=" width:500px;min-height:60px;margin:0px auto !important;">
+                        <div class="pb-25 center section-heading student-comment-heading" >
                             <h4 class="primary-color">With <span class="red-text"> ❤ </span>from Aurora students</h4>
                             <div class="row container" style="margin-top:-30px;">
                                 <div class="col s7"></div>
