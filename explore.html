@@ -108,6 +108,24 @@
             position: absolute;
             z-index:1;
         }
+        .section-heading{
+            width:500px;min-height:60px;margin:0px auto !important;
+        }
+        @media only screen and (max-width: 600px) {
+           
+           .container{
+               max-width:97% !important;
+               /* border:2px dashed red !important; */
+               padding-bottom:20px;
+           }
+           .section-heading{
+               width:300px;
+               /* border:2px dashed yellow; */
+               margin-left:-100px;
+           }
+           
+         
+        }
     </style>
     </head>
     <body>
@@ -182,16 +200,16 @@
             <div class="explore-banner">
                 <div class="explore-hero-overlay"></div>
                 <div class="explore-hero-overlay-2"></div>
-                <div class="explore-hero-content  full-w" style="margin:100px auto !important;">
+                <div class="explore-hero-content  full-w" style="margin:120px auto !important;">
                     <div class=" container">
-                        <h4 class="white-text center">Explore! We have something for you</h4>
+                        <h3 class="white-text center">Explore! We have something for you</h3>
                         <div class="row  container" style="margin-top:-28px;width:550px;">
                             <div class="col s6"></div>
                             <div class="col s4"></div>
                             <div class="col  s2 pink" style="height:15px;"></div>
                         </div>
                     </div>
-                    <div class="  row pt-50" style="width:550px;">
+                    <div class="hide-on-med-and-down  row pt-50" style="width:550px;">
                         <input class="col s8  subscibe-input mt-50  white black-text" placeholder="Password" type="text" style="
                             font-size:15px !important; border:1px solid grey;padding:2px 8px;border-radius:5px;margin-right:20px;">
                         <button class="col s3  btn-flat   btn-primary transparent waves-effect waves-light btn modal-trigger" 
@@ -207,7 +225,7 @@
             <div class="trending-feature pb-100 full-w" style="margin-top:100px;">
                 <div class="container row">
                     <div class="col s12 m10">
-                        <div class=" pb-25 left section-heading" style=" width:500px;min-height:60px;margin:0px auto !important;">
+                        <div class=" pb-25 left section-heading" >
                             <h4 class="primary-color" style="font-weight:600;">Trending public finance courses</h4>
                             <div class="row  full-w" style="margin-top:-30px;width:400px;">
                                 <div class="col s7"></div>
