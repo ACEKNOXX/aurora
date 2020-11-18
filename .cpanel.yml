@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/auroraf2/public_html/
+    - /bin/cp * $DEPLOYPATH
